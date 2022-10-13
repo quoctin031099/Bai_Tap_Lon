@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>TheGioiSuaBot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/icon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+	<script src="../js/jquery.js"></script>	
+	<script src="../js/custom.js"></script>	
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>	
+<body style="background-color: white;background-image: none;">
+<!-- header -->
+<header>
+	<div class="container-fullwidth" >
+		<div class="row bg-light header-light">
+			<div class="col-md-4 center">
+				<a class="navbar-brand" href="index.html">
+				<img src="../images/icon.png" width="50" height="50" alt="" loading="lazy"><b>Thế Giới Sữa Bột</b>
+				</a>
+			</div>
+			<div class="col-md-4">
+				<form class="form-inline">
+    				<input class="form-control mr-sm-2" type="search" placeholder="Nhập từ khóa + Enter..." aria-label="Search">
+  				</form>
+			</div>
+			<div class="col-md-4">
+				<div class="account">
+					<div class="dropdown">
+						<button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    					Tài Khoản
+ 						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a data-toggle="modal" data-target="#dn" class="dropdown-item" href="#">Đăng Nhập</a>
+						    <a data-toggle="modal" data-target="#dk" class="dropdown-item" href="#">Đăng kí</a>
+						</div>
+					</div>
+				</div>
+				<div class="cart">
+					<div class="dropdown">
+						<a href="404.html"><img src="../images/cart.png" height="30">
+							<span class="cart-">
+								<span>Giỏ Hàng(<span class="cart-count">0</span>)
+								</span>
+							</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</header>				
+    <div class="container-fullwidth">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="menu">
+                    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #1b1201;">
+                        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle 			navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                                </li>
+                                <li class="nav-item dropdown hover1" style="margin-top: 0px;padding-right: 0px;">
+                                    <a style="padding-bottom: 1px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Sản Phẩm
+                                    </a>
+                                    <div class="dropdown-content" aria-labelledby="navbarDropdown" style="margin-top: 5px;">
+                                        <a style="margin-top:5px;" class="dropdown-item" href="sanpham.html">Sản Phẩm</a>
+                                        <a style="padding: 10px;" class="dropdown-item" href="muanhieu.html">Mua nhiều</a>
+                                        <a style="padding: 10px;" class="dropdown-item" href="action.html">Action</a>
+                                        <a style="padding: 10px;" class="dropdown-item" href="idols.html">Best Seller</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="khuyenmai.html">Khuyến Mãi<sup><span class="badge badge-info" style="font-family: tahoma;">hot</span></sup></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="huongdan.html">Hướng Dẫn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+		<hr style="margin:0px;border:1px solid white;">		
+<!-- sanpham-->
+<div style="background-color: white">
+	<div class="container">
+		<div class="row" style="margin-top: 10px;">
+			<div class="col-md-12">
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+				    <li class="breadcrumb-item"><a href="sanpham.html">SAN PHAM</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Sữa bột Nuti Grow Plus đỏ</li>
+				  </ol>
+				</nav>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 10px;">
+			<div class="col-md-4">
+				<div class="sanpham" >
+					<img id="sp1" src="../images/sp6.jpg" width="100%" height="auto" alt="#" data-zoom-image="../images/sp6.jpg">
+				</div>
+				<div class="row" style="margin-top: 10px;">
+					<div class="col-md-3 col-3" style="padding: 0px 5px 0px 0px;width: 80%">
+						<img class="img-fluid img-thumbnail" src="../images/sp6/sub1sp6.jpg">
+					</div>
+					<div class="col-md-3 col-3" style="padding:0px 5px 0px 0px;width: 80%">
+						<img class="img-fluid img-thumbnail" src="../images/sp6/sub2sp6.jpg">
+					</div>
+					<div class="col-md-3 col-3" style="padding:0px 5px 0px 0px;width: 80%">
+						<img class="img-fluid img-thumbnail" src="../images/sp6/sub3sp6.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thongtin" style="padding: 40px;">
+					<div class="product-title" style="width: 370px;"><p style="font-family: 'Coiny', cursive;">Sữa bột Nuti Grow Plus đỏ 900g</p></div>
+					<div id="dongia" class="product-price margin-bot" style="margin-bottom: 30px;">550,000 VND</div>
+					<div class="muahang">
+						<div class="soluong">
+							<label>Số lượng</label>
+							<div class="input-group" style="margin-top: 20px">
+								<input onclick="giam()" type="button" value="-" class="button" style="border-radius: 5px 0px 0px 5px;">
+								<input type="text" name="" id="quantity" value="1" min="1" class="selector">
+								<input onclick="tang()" type="button" value="+" class="button" style="border-radius: 0px 5px 5px 0px;">
+							</div>
+						</div>
+						<div class="muangay" style="margin-top: 50px;">
+							<button data-toggle="modal" data-target="#exampleModal" type="button" class="btn" onclick="tensp();tien();format_curency();" style="width: 350px; background-color: #28a745d1;color:white; height: 45px;">Mua ngay</button>
+						</div>
+						<div class="giohang" style="margin-top: 20px;">
+							<button type="button" class="btn" style="width: 350px;color:white; height: 45px;">Thêm vào giỏ</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px;">
+						<span>Lưu ý:</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 dexuat" style="padding-left: 125px;">
+				<div class="title" style="background-color:#212529;padding: 5px;">
+					<h4 align="center" style="color:white;">Sản phẩm liên quan</h4>
+				</div>
+				<div>
+					<div class="row dexuat-list">
+						<a href="404.html" class="col-md-6"><img class="img-fluid img-thumbnail" src="../images/sp1.jpg"></a>
+						<div class="col-md-6" style="padding-left: 0px;padding-top: 1rem;">
+							<div class="row">
+								<a href="404.html" class="col-md-12" style="padding-left: 5px;color:black;"><span> Sữa bột Ensure Vanni Úc 850g</span></a>
+							</div>
+							<div class="row">
+								<p class="col-md-12" align="center" style="padding-left: 0px;">600,000đ</p>
+							</div>
+						</div>
+					</div>
+					<div class="row dexuat-list">
+						<a href="404.html" class="col-md-6"><img class="img-fluid img-thumbnail" src="../images/sp4.jpg"></a>
+						<div class="col-md-6" style="padding-left: 0px;padding-top: 1rem;">
+							<div class="row">
+								<a href="404.html" class="col-md-12" style="padding-left: 5px;color:black;"><span>Sữa bột Abbott PediaSure 850g</span></a>
+							</div>
+							<div class="row">
+								<p class="col-md-12" align="center" style="padding-left: 0px;">700,000đ</p>
+							</div>
+						</div>
+					</div>
+					<div class="row dexuat-list">
+						<a href="404.html" class="col-md-6"><img class="img-fluid img-thumbnail" src="../images/sp5.jpg"></a>
+						<div class="col-md-6" style="padding-left: 0px;padding-top: 1rem;">
+							<div class="row">
+								<a href="404.html" class="col-md-12" style="padding-left: 5px;color:black;"><span>Sữa bột Dutch Lady Gold 1.5kg</span></a>
+							</div>
+							<div class="row">
+								<p class="col-md-12" align="center" style="padding-left: 0px;">400,000đ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8" style="margin-top: 20px;">
+				<div class="btn-group">
+					<button type="button" class="btn" style="background-color: #17a2b8;">Mô tả chi tiết</button>
+				</div>
+				<div class="description" style="border:solid 1px #E5E5E5;margin-top: 10px;">
+					<p id="tensp">SỮA BỘT NUTI GROW PLUS ĐỎ 900g</p>
+					<p>Thương hiệu: GrowPlus+</p>
+					<p>Xuất xứ: Việt Nam </p>
+					<p>Trọng lượng sản phẩm: 900gam </p>
+					<p>Độ tuổi: Trên 1 tuổi</p>
+					<p>Thành phần: 	Sữa bột nguyên kem bổ sung vitamin A và D3, đường sucrose, maltodextrin, chất xơ thực phẩm (FOS/ Inulin), medium chain triglycerides (MCT), axit docosahexaenoic (DHA) từ dầu cá, l - lysine hydrochlorid, vitamin và khoáng chất (tricanxi photphat, canxi cacbonat, natri ascorbat, magiê oxit, sắt pyrophotphat, dl-alpha tocopheryl axetat, niacinamid, kẽm oxit, vitamin K1, vitamin A axetat, axit folic, natri selenit, canxi d-pantothenat, vitamin D3, vitamin B12, kali iodua, pyridoxin hydrochlorid, thiamin mononitrat, inositol, thiamin hydrochlorid, biotin), 2' -fucosyllactose (2'-FL), cholin bitartrat, hương liệu tổng hợp dùng cho thực phẩm, taurin.
+						Có chứa sữa. Có thể chứa đậu nành. </p>
+				</div>
+			</div>
+		</div>	
+	</div>
+<!--dangki-->
+<div class="modal fade" id="dk" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="row modal-header">
+        <img class="col-md-11"  src="../images/dk-bg.png">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="col-md-12">
+      		<form class="muahang">
+      			<input id="txttkdk" type="text" name="" placeholder="Nhập Tài khoản" size="40" class="form-control" onblur="kiemtratkdk()">
+                <span id="er3" style="color:red;">*</span>
+      			<input id="txtmkdk" type="password" name="" placeholder="Mật khẩu" size="40" class="form-control" onblur="kiemtramkdk();">
+      			<span id="er4" style="color:red;">*</span>
+      			<input id="txtremkdk" type="password" name="" placeholder="Nhập lại mật khẩu" size="40" class="form-control" onblur="remk();">
+      			<span id="er5" style="color:red;">*</span>
+      			<input id="txtemail" type="text" name="" placeholder="Nhập Email" size="40" class="form-control" onblur="kiemtraemail();">
+      			<span id="er6" style="color:red;">*</span>
+      			<input id="txtsdt" type="text" name="" placeholder="Số điện thoại" size="40" class="form-control" onblur="kiemtrasdt();mokhoadk();">
+      			<span id="er7" style="color:red;">*</span>
+      			<div class="row">
+      				<div class="col-md-4"></div>
+      				<input id="dangki" class="col-md-4 btn btn-danger" type="submit" value="Đăng kí" class="form-control" disabled="disabled">
+      			</div>
+      		</form>
+      	</div>
+      </div>
+      <div class="row modal-footer" style="padding-bottom: 10px;">
+      	<h5 class="col-md-12" align="center">Đã có tài khoản?</h5>
+      	<input data-toggle="modal" data-dismiss="modal" data-target="#dn" class="col-md-12 btn btn-success" type="submit" value="Đăng nhập ngay" class="form-control">
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+<!--dangnhap-->
+<div class="modal fade" id="dn" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="row modal-header">
+        <img class="col-md-11"  src="../images/dn-bg.jpg">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="col-md-12">
+      		<form class="muahang">
+      			<input id="txttk" type="text" name="" placeholder="Tài khoản" size="40" class="form-control" onblur="kiemtratk()">
+                <span id="er1" style="color:red;">*</span>
+      			<input id="txtmk" type="password" name="" placeholder="Mật khẩu" size="40" class="form-control" onblur="kiemtramk();mokhoa();">
+      			<span id="er2" style="color:red;">*</span>
+      			<div class="row">
+      				<div class="col-md-4"></div>
+      				<input id="dangnhap" class="col-md-4 btn btn-danger" type="submit" value="Đăng Nhập" class="form-control" disabled="disabled">
+      			</div>
+      		</form>
+      	</div>
+      </div>
+      <div class="row modal-footer" style="padding-bottom: 10px;">
+      	<h5 class="col-md-12" align="center">Chưa có tài khoản?</h5>
+      	<input data-toggle="modal" data-dismiss="modal" data-target="#dk" class="col-md-12 btn btn-success" type="submit" value="Đăng kí ngay" class="form-control">
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>		
+<!--modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="padding-left: 40%;">
+        <h5 class="modal-title" id="exampleModalLabel">Mua hàng</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="col-md-12">
+      		<form class="muahang">
+      			<input type="text" name="" placeholder="Họ và tên..." size="40" class="form-control">
+      			<input type="email" name="" placeholder="Email..." size="40" class="form-control">
+      			<input type="text" name="" placeholder="Sđt..." size="40" class="form-control">
+      			<textarea name="" placeholder="Địa chỉ..." rows="4" class="form-control"></textarea>
+      			<input type="text" name="" placeholder="Lưu ý..." size="40" class="form-control">
+      			<div class="row">
+      				<div class="col-md-4"></div>
+      				<input class="col-md-4 btn btn-danger" type="submit" value="Xác nhận" class="form-control">
+      			</div>
+      		</form>
+      	</div>
+      </div>
+      <div class="modal-footer row" style="padding-bottom: 10px;">
+      	<h5 class="col-md-12" align="center">Thông tin sản phẩm</h5>
+      	<p class="col-md-12" id="ten"></p>
+      	<img class="col-md-3" src="../images/sp6.jpg">
+      	<div class="col-md-8">
+      		<p class="col-md-12">Thành tiền:</p>
+      		<p class="col-md-12" id="thanhtien"></p>
+      	</div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>	
+<!-- footer -->
+<footer>
+	<div class="container-fullwidth" style="margin-top: 10px;">
+		<div class="row" style="margin-top: 10px;background-image:url(../images/bg-footer.jpg);height:auto;">
+			<div class="col-md-12" style="padding-top: 20px;">
+			<div class="row">
+				<div class="col-md-4" >
+					<img src="../images/logo-trong.png"style="border-bottom: 1px dotted white;">
+				</div>
+				<div class="col-md-4">
+					<h3 align="center" style="margin-top: 0px;color:white;text-shadow: 2px 2px 4px black;border-bottom: 1px dotted white;">Liên Hệ</h3>
+					<div class="row">
+						<p class="col-md-12" style="text-shadow: 1px 1px 2px black;font-weight: 500;color: #f8f9fa;">&#10148; Địa chỉ: 12 Nguyễn Văn Bảo/p.5/ Gò Vấp/ tpHCM</p>
+						<p class="col-md-12" style="text-shadow: 1px 1px 2px black;font-weight: 500;color: #f8f9fa;">&#10148; Sđt: 0903583814</p>
+						<p class="col-md-12" style="text-shadow: 1px 1px 2px black;font-weight: 500;color: #f8f9fa;">&#10148; Email:quoctin0310@gmail.com</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h3 align="center" style="margin-top: 0px;color:white;text-shadow: 2px 2px 4px black;border-bottom: 1px dotted white;">Kết nối chúng tôi</h3>
+					<div class="row">
+						<a class="col-md-3" href="#"><img src="../images/fbicon.png" width="40px"></a>
+						<a class="col-md-3" href="#"><img src="../images/zaloicon.png" width="40px"></a>
+						<a class="col-md-3" href="#"><img src="../images/youtubeicon.png" width="40px"></a>
+						<div class="col-md-12" style="border-bottom: 1px dotted white;padding-top: 10px;"></div>
+						<a href="gioithieu.html" class="col-md-4"><button class=" btn btn-success" style="margin-top: 10px;text-shadow: 2px 2px 4px black;box-shadow: 2px 2px 4px black;"><span>Giới thiệu</span></button></a>
+						<div class="col-md-4"></div>
+						<a href="index.html" class="col-md-4"><button src="index.html" class=" btn btn-success" style="margin-top: 10px;text-shadow: 2px 2px 4px black;box-shadow: 2px 2px 4px black;"><span>Trang chủ</span></button></a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="row bg-light" style="margin-top: 5px;">
+			<div class="col-md-12">
+				<p align="center">Thực hiện bởi Nhóm Đào Quốc Tín - Cao Võ Nhật Minh <a></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="../js/jquery.elevatezoom.js"></script>
+<!--script dn-dk-->
+    <script type="text/javascript">
+	function kiemtratkdk()
+	{
+	    if (document.getElementById("txttkdk").value == "") {
+	        document.getElementById("er3").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regtkdk=/^[a-z0-9_A-Z-]{4,16}$/;
+		var tkdk=document.getElementById("txttkdk").value;
+		if (regtkdk.test(tkdk)==false)
+		{
+			document.getElementById("er3").innerHTML="(*) tài khoản phải từ 4-16 và không được chứa kí tự đặc biệt";
+			return false;
+		}
+		else
+		{
+			document.getElementById("er3").innerHTML="";
+			return true;
+		}
+	}
+	function kiemtramkdk()
+	{
+	    if (document.getElementById("txtmkdk").value == "") {
+	        document.getElementById("er4").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regmkdk=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
+		var mkdk=document.getElementById("txtmkdk").value;
+		if (regmkdk.test(mkdk)==false)
+		{
+			document.getElementById("er4").innerHTML="(*) mk phải 6-16kí tự bao gồm chữ,số và chữ in hoa";
+			return false;
+		}
+		else
+		{
+			document.getElementById("er4").innerHTML="";
+			return true;
+		}
+	}
+	function remk()
+	{
+	    if (document.getElementById("txtremkdk").value == "") {
+	        document.getElementById("er5").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var mkdk=document.getElementById("txtmkdk").value;
+		var remk=document.getElementById("txtremkdk").value;
+		if (mkdk==remk)
+		{
+			document.getElementById("er5").innerHTML="";
+			return true;
+		}
+		else
+		{
+			document.getElementById("er5").innerHTML="(*) chưa trùng khớp với mk";
+			return false;
+		}
+	}
+	function kiemtraemail()
+	{
+	    if (document.getElementById("txtemail").value == "") {
+	        document.getElementById("er6").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regemail=/^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+		var email=document.getElementById("txtemail").value;
+		if(regemail.test(email)==false)
+		{
+			document.getElementById("er6").innerHTML ="(*) Email không hợp lệ";
+            return false;
+		}
+		else{
+			document.getElementById("er6").innerHTML ="";
+            return true;
+		}
+	}
+	function kiemtramk()
+	{
+	    if (document.getElementById("txtmk").value == "") {
+	        document.getElementById("er2").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regmk=/^[a-z0-9_A-Z-]{6,16}$/;
+		var mk=document.getElementById("txtmk").value;
+		if (regmk.test(mk)==false)
+			{
+                document.getElementById("er2").innerHTML ="(*) mật khẩu quá ngắn";
+                return false;
+            }
+                else
+            {
+                document.getElementById("er2").innerHTML ="";
+                return true;
+            }
+	}
+	function kiemtrasdt()
+	{
+	    if (document.getElementById("txtsdt").value == "") {
+	        document.getElementById("er7").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regsdt=/^(05[5|8|9]|08[1|2|3|5|86|9]|03[2|3|4|5|5|7|8|9]|07[0|9|7|6|8]|09[0|2|1|4|3|6|7|8|9])+([0-9]{7,8})$/;
+		var sdt=document.getElementById("txtsdt").value;
+		if (regsdt.test(sdt)==false)
+			{
+                document.getElementById("er7").innerHTML ="(*) số điện thoại sai";
+                return false;
+            }
+                else
+            {
+                document.getElementById("er7").innerHTML ="";
+                return true;
+            }
+	}
+	function mokhoadk()
+    {
+    if (kiemtratkdk() == true && kiemtramkdk() == true && remk()==true &&kiemtraemail() ==true &&kiemtrasdt()==true)
+    document.getElementById("dangki").disabled = false;
+    }
+	function kiemtratk()
+	{
+	    if (document.getElementById("txttk").value == "") {
+	        document.getElementById("er1").innerHTML = "(*) không được bỏ trống";
+	        return false;
+	    }
+		var regtk=/^[a-z0-9_]{4,16}$/;
+		var tk=document.getElementById("txttk").value;
+		if (regtk.test(tk)==false)
+			{
+                document.getElementById("er1").innerHTML ="(*) tài khoản phải từ 4-16 kí tự và không chứa kí tự đặc biệt";
+                return false;
+            }
+                else
+            {
+                document.getElementById("er1").innerHTML ="";
+                return true;
+            }
+	}
+	function mokhoa()
+    {
+    if (kiemtratk() == true && kiemtramk() == true)
+    document.getElementById( "dangnhap").disabled = false;
+    }
+    </script>
+<script type="text/javascript">
+	function tien()
+	{
+		var sl=document.getElementById("quantity").value;
+		var dongia=document.getElementById("dongia").innerHTML;
+		var dongiax=dongia.replace(",","");
+		var dongiay=dongiax.replace(",","");
+		var thanhtien=sl*parseInt(dongiay);
+		document.getElementById("thanhtien").innerHTML=dongia+" x "+sl+" = "+thanhtien+" VND";
+	}
+</script>
+<script type="text/javascript">
+	function format_curency() 
+	{
+  	 	var x=document.getElementById("thanhtien").innerHTML; 
+  	 	var x= x.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+  	 	document.getElementById("thanhtien").innerHTML=x;
+    }   
+</script>
+<script type="text/javascript">
+	function tensp()
+	{
+		var ten=document.getElementById("tensp").innerHTML;
+		document.getElementById("ten").innerHTML=ten;
+	}
+</script>
+<script>
+	function tang()
+	{
+		var i=document.getElementById("quantity").value;
+		i++;
+		document.getElementById("quantity").value=i;
+	}
+</script>
+<script>
+	function giam()
+	{
+		var x=document.getElementById("quantity").value;
+		if ( x > 1)
+		{
+			var i=document.getElementById("quantity").value;
+			i--;
+			document.getElementById("quantity").value=i;
+		}
+	}
+</script>
+<script>
+	$("#sp1").elevateZoom();
+</script>
+<script src="../js/jquery.js"></script>	
+<script src="../js/popper.min.js"></script>	
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.js"></script>	
+<script src="../js/custom.js"></script>	
+</body>
+</html>

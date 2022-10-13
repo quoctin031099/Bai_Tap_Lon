@@ -1,0 +1,249 @@
+*{
+	margin:0px;
+	padding:0px auto;
+	box-sizing: border-box;
+
+}
+
+@font-face{
+	src:url(../font/coiny-regular.ttf);
+	font-family: Coiny;
+}
+.row{
+	padding: 0;
+	margin: 0;
+}
+
+.header-light{
+	border-bottom:1px solid gray;
+	box-shadow: 0px 0px 5px gray;
+}
+.center {
+  display: block;
+  text-align: center;
+}
+.navbar-brand b{
+	color:black;
+	text-shadow: 0px 0px 1px yellow;
+	font-size: 20px;
+}
+.navbar-brand b:hover{
+	font-size:25px;
+	transition: 500ms;
+}
+.form-inline{
+	padding-top: 10px;
+}
+@media (min-width: 576px){
+.form-inline .form-control {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}	
+}
+.menu li{
+	text-align: center;
+	margin-left: 100px;
+	padding: -1px 30px 0px 30px;	
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    font-size: 18px;
+   	text-shadow: 0px 0px 4px #ffbc00;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fdeaea;
+    font-weight: bold;
+
+}
+.bg-color{
+	background-color: black;
+	border-radius: 30px;
+}
+.dropdown{
+	float: left;
+	padding-right: 20px;
+	margin-top: 15px;
+}
+.dropdown-menu{
+	background-color: #ffffff;
+	min-width: 0;
+}
+.dropdown-item{
+	font-family: 'Coiny', cursive;
+	width: 100px;
+	padding: 10px 10px 10px 10px;
+}
+.dropdown-item:hover{
+	color: green;
+	text-shadow: 0px 0px 4px white;
+	transition: 200ms;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    background-color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+span{
+	
+	font-family: 'Coiny', cursive;
+}
+@media (max-width: 576px){
+	.carousel{
+		height: auto;
+	}
+	.carousel-caption a{
+		display: block;
+	}
+	.w-100{
+		height:250px;
+	}
+	.menu{
+		display: block;
+	}
+	.menu li{
+		margin-right: 100px;
+	}
+	.account{
+		display: block;
+	}
+	.col-4{
+		margin:0px;
+	}
+}
+@media (max-width: 576px){
+	.dexuat{
+		display: none;
+	}
+}
+
+.fluid-padding{
+	padding: 0px;
+}
+.menu{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.carousel-item a{
+	color:white;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	border:1px solid red;
+	border-radius: 30px;
+	background-color: red;
+}
+.carousel-item a:hover{
+	border:1px solid #bd0000;
+	background-color: #bd0000;
+}
+.carousel-control-prev, .carousel-control-next{
+	width: 18%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 60px;
+    color: white;
+}
+.card{
+	overflow: hidden; 
+	width: 500px; 
+}
+.card-img-top{
+	transition: transform .5s ease;
+}
+.card-img-top:hover{
+	transform: scale(1.2);
+	transition: transform .5s ease;
+}
+.card-body{
+	padding: 1.25rem 10px 10px 10px;
+	
+}
+.card-body1{
+	padding: 2.25rem 10px 10px 10px;
+}
+.card-body a{
+	margin-bottom: 2px;
+}
+.card-title {
+    margin-bottom: 0;
+}
+.slide{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.product-title{
+	color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.product-price{
+	color: red;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.selector{
+	outline: none;
+	background: #f9f9f9;
+    color: #7d7d7d;
+    font-weight: 500;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+    border: 1px solid #efefef;
+    border-left: none;
+    border-right: none;
+    float: left;
+}
+.button{
+	outline: none;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border: 1px solid #efefef;
+}
+.giohang button{
+	background-color: #ffc107;
+}
+.giohang button:hover{
+	background-color: #dc3545;
+}
+.description p{
+	padding: 10px 0px 0px 20px;
+	margin-bottom: 0px;
+}
+.dexuat-list{
+	border-right:1px solid #E5E5E5;
+	border-bottom :1px solid #E5E5E5;
+	border-left:1px solid #E5E5E5;
+}
+.muahang input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.dropdown{
+   position: relative;
+   display: inline-block;
+}
+.dropdown-content{
+   display: none;
+   position: absolute;
+   background-color: #f5f5f5;
+   z-index: 1;
+   list-style: none;
+}
+.dropdown:hover .dropdown-content{
+   display: block;
+   transition: 1000ms;
+   transition-delay: 1000ms;
+}
+.hover1:hover{
+	color:black;
+}
